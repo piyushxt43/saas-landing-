@@ -3,12 +3,12 @@ import { Linkedin, Instagram, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-white/10 py-12 px-4">
+    <footer className="bg-black border-t border-white/10 py-8 sm:py-10 md:py-12 px-4">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8">
           <div className="col-span-1 md:col-span-2">
-            <DraftlyLogo className="mb-4" />
-            <p className="text-white/70 mb-4 max-w-md">
+            <DraftlyLogo className="mb-3 sm:mb-4" />
+            <p className="text-white/70 mb-3 sm:mb-4 max-w-md text-sm sm:text-base">
               Empowering businesses with cutting-edge SaaS solutions. Founded by Piyush Singh, Draftly has scaled from 0 to 33K users and 800K social viewers.
             </p>
             <div className="flex gap-4 mt-4">
@@ -95,8 +95,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-8 pt-8 text-center text-white/50">
-          <p>&copy; 2024 Draftly by Piyush Singh. All rights reserved.</p>
+        <div className="border-t border-white/10 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-white/50">
+          <p className="text-xs sm:text-sm">&copy; 2024 Draftly by Piyush Singh. All rights reserved.</p>
         </div>
       </div>
     </footer>

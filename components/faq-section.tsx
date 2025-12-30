@@ -55,11 +55,11 @@ export function FAQSection() {
   }
 
   return (
-    <section id="faq" className="py-20 px-4 bg-background">
+    <section id="faq" className="py-12 sm:py-16 md:py-20 px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <motion.h2
-            className="text-4xl font-bold text-white mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4 px-2"
             style={{ fontFamily: "var(--font-playfair)" }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ export function FAQSection() {
             Frequently Asked Questions
           </motion.h2>
           <motion.p
-            className="text-xl text-gray-300 max-w-2xl mx-auto"
+            className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto px-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}

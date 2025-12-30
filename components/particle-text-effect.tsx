@@ -165,9 +165,13 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
     offscreenCanvas.height = canvas.height
     const offscreenCtx = offscreenCanvas.getContext("2d")!
 
+    // Responsive font size based on canvas width (mobile-friendly)
+    const isMobile = canvas.width < 640
+    const fontSize = isMobile ? Math.min(canvas.width * 0.15, 60) : Math.min(canvas.width * 0.12, 100)
+
     // Draw text
     offscreenCtx.fillStyle = "white"
-    offscreenCtx.font = "bold 100px Arial"
+    offscreenCtx.font = `bold ${fontSize}px Arial`
     offscreenCtx.textAlign = "center"
     offscreenCtx.textBaseline = "middle"
     offscreenCtx.fillText(word, canvas.width / 2, canvas.height / 3)
@@ -374,8 +378,8 @@ export function ParticleTextEffect({ words = DEFAULT_WORDS }: ParticleTextEffect
   }, [])
 
   return (
-    <div className="w-full h-full absolute inset-0">
-      <canvas ref={canvasRef} className="w-full h-full" style={{ background: "black", zIndex: 10 }} />
+    <div className="w-full h-full absolute inset-0" style={{ zIndex: 1 }}>
+      <canvas ref={canvasRef} className="w-full h-full" style={{ background: "transparent" }} />
     </div>
   )
 }

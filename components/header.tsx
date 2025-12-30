@@ -37,7 +37,7 @@ export function Header() {
     >
       <div
         className={`
-          flex items-center justify-center gap-6 px-6 py-3 rounded-2xl border transition-all duration-300
+          flex items-center justify-center gap-2 sm:gap-4 md:gap-6 px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-xl sm:rounded-2xl border transition-all duration-300
           ${
             isScrolled
               ? "bg-background/90 backdrop-blur-xl border-border/40 shadow-2xl"
@@ -78,19 +78,21 @@ export function Header() {
           </a>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3">
           <Button
             variant="ghost"
             size="sm"
-            className="text-foreground/80 hover:text-foreground hover:bg-foreground/10 transition-all duration-200 rounded-xl"
+            className="text-foreground/80 hover:text-foreground hover:bg-foreground/10 transition-all duration-200 rounded-xl text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5"
           >
-            Sign In
+            <span className="hidden sm:inline">Sign In</span>
+            <span className="sm:hidden">Sign</span>
           </Button>
           <Button
             size="sm"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground transform transition-all duration-200 hover:scale-105 hover:shadow-lg rounded-xl"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground transform transition-all duration-200 hover:scale-105 hover:shadow-lg rounded-xl text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5"
           >
-            Get Started
+            <span className="hidden sm:inline">Get Started</span>
+            <span className="sm:hidden">Start</span>
           </Button>
         </div>
       </div>

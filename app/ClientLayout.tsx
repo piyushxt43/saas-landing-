@@ -41,6 +41,9 @@ export default function ClientLayout({
     <Suspense
       fallback={
         <html lang="en">
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+          </head>
           <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} ${playfair.variable}`}>
             <div>Loading...</div>
           </body>

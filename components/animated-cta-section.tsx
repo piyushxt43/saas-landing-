@@ -9,7 +9,7 @@ export function AnimatedCTASection() {
   const contentRef = useRef<HTMLDivElement>(null)
 
   return (
-    <section className="relative py-20 px-4 overflow-hidden">
+    <section className="relative py-12 sm:py-16 md:py-20 px-4 overflow-hidden">
       <div className="absolute inset-0">
         <div className="h-full w-full bg-gradient-to-br from-gray-900 via-black to-gray-800">
           <BackgroundPaths />
@@ -40,31 +40,31 @@ export function AnimatedCTASection() {
 
       <div className="relative z-10 container mx-auto">
         <div
-          className="rounded-2xl p-12 text-center animate-fade-in-up"
+          className="rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 text-center animate-fade-in-up"
           ref={contentRef}
           style={{ animationDelay: "0.3s" }}
         >
           <h2
-            className="text-4xl font-bold text-white mb-4 drop-shadow-lg animate-fade-in-up"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg animate-fade-in-up px-2"
             style={{ fontFamily: "var(--font-playfair)", animationDelay: "0.5s" }}
           >
             Ready to Transform Your Business?
           </h2>
           <p
-            className="text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md animate-fade-in-up"
+            className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto drop-shadow-md animate-fade-in-up px-4"
             style={{ animationDelay: "0.7s" }}
           >
             Join thousands of companies already using Draftly to streamline their operations and boost productivity. Founded by Piyush Singh, scaled from 0 to 33K users.
           </p>
           <div
-            className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in-up px-4"
             style={{ animationDelay: "0.9s" }}
           >
-            <Button size="lg" className="bg-white text-black hover:bg-white/90 group">
+            <Button size="lg" className="bg-white text-black hover:bg-white/90 group text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
               Start Your Free Trial
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
               Contact Sales
             </Button>
           </div>

@@ -6,28 +6,30 @@ import { ProgressiveBlur } from "./ui/progressive-blur"
 
 export function HeroSection() {
   return (
-    <section className="py-20 px-4 relative overflow-hidden min-h-screen flex flex-col justify-between">
-      <div className="flex-1 flex items-start justify-center pt-20">
-        <ParticleTextEffect words={["Draftly", "SAAS", "PLATFORM", "DRAFTLY"]} />
+    <section className="py-8 sm:py-12 md:py-20 px-4 relative overflow-hidden min-h-screen flex flex-col justify-between">
+      <div className="flex-1 flex items-start justify-center pt-8 sm:pt-12 md:pt-20 pb-4 sm:pb-8">
+        <div className="w-full h-[200px] sm:h-[300px] md:h-[400px] relative">
+          <ParticleTextEffect words={["Draftly", "SAAS", "PLATFORM", "DRAFTLY"]} />
+        </div>
       </div>
 
-      <div className="container mx-auto text-center relative z-10 pb-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-balance">
-            Empowering businesses with cutting-edge SaaS solutions. <span className="text-gray-300">Built by Piyush Singh, scaled from 0 to 33K users.</span>
+      <div className="container mx-auto text-center relative z-10 pb-4 sm:pb-8">
+        <div className="max-w-4xl mx-auto px-2 sm:px-4">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6 text-balance leading-tight">
+            Empowering businesses with cutting-edge SaaS solutions. <span className="text-gray-300 block mt-2 sm:inline sm:mt-0">Built by Piyush Singh, scaled from 0 to 33K users.</span>
           </h2>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-white hover:bg-gray-200 text-black group">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-12">
+            <Button size="lg" className="bg-white hover:bg-gray-200 text-black group text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
               Start Free Trial
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 bg-transparent">
+            <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 bg-transparent text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
               Watch Demo
             </Button>
           </div>
 
-          <div className="mt-16 mb-8">
+          <div className="mt-8 sm:mt-12 md:mt-16 mb-4 sm:mb-8">
             <div className="group relative m-auto max-w-6xl">
               <div className="flex flex-col items-center md:flex-row">
                 <div className="md:max-w-44 md:border-r md:border-gray-600 md:pr-6 mb-4 md:mb-0">

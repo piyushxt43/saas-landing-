@@ -107,11 +107,11 @@ export function AnimatedFeaturesSection() {
       </svg>
 
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4" style={{ fontFamily: "var(--font-playfair)" }}>
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4 px-2" style={{ fontFamily: "var(--font-playfair)" }}>
             Powerful Features
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto px-4">
             Everything you need to take your business to the next level
           </p>
         </div>
